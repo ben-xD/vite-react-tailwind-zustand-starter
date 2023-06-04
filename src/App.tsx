@@ -1,16 +1,33 @@
-import { useCountStore } from "./stores/count";
+import { useBoundStore } from "./state/store";
 
 function Counter() {
-  const count = useCountStore((state) => state.count);
-  return <p className="inline">Count: {count}</p>;
+  const count = useBoundStore((state) => state.count);
+  const age = useBoundStore((state) => state.age);
+  return (
+    <div className="flex flex-col">
+      <p className="inline">Count: {count}</p>
+      <p className="inline">Age: {age}</p>
+    </div>
+  );
 }
 
 function Controls() {
-  const increase = useCountStore((state) => state.increase);
+  const incrementCount = useBoundStore((state) => state.incrementCount);
+  const decrementCount = useBoundStore((state) => state.decrementCount);
+  const incrementAge = useBoundStore((state) => state.incrementAge);
+  const decrementAge = useBoundStore((state) => state.decrementAge);
   return (
     <>
-      <button onClick={() => increase(1)}>one up</button>
-      <button onClick={() => increase(-1)}>one down</button>
+      <div>
+        <p>Count</p>
+        <button onClick={incrementCount}>one up</button>
+        <button onClick={decrementCount}>one down</button>
+      </div>
+      <div>
+        <p>Age</p>
+        <button onClick={incrementAge}>one up</button>
+        <button onClick={decrementAge}>one down</button>
+      </div>
     </>
   );
 }

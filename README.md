@@ -21,3 +21,4 @@
 ## Useful
 - Zustand
   - [Typescript usage](https://github.com/pmndrs/zustand/blob/HEAD/docs/guides/typescript.md)
+  - [Long discussion about Zustand middlewares with typescript](https://github.com/pmndrs/zustand/issues/508#issuecomment-1200443303)
