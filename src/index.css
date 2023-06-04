@@ -1,0 +1,4 @@
+/* If you get an error `Unknown at rule @tailwindcss(unknownAtRules)`, see https://stackoverflow.com/a/61333686/7365866  */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
