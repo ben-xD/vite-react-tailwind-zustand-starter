@@ -3,7 +3,11 @@
 ## Example
 - https://vite-react-tailwind-zustand-starter.pages.dev/
 
-## Setup
+## Use this template
+- run `npx degit git@github.com:ben-xD/vite-react-tailwind-zustand-starter.git generated-project-name`
+
+## Setup. after creating the template.
+- Install Node
 - Install `pnpm`
 - install dependencies: `pnpm install`
 - VSCode:
